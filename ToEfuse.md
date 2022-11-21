@@ -9,8 +9,8 @@
 
 ### Proposed Steps
 1. ~~Scaffold a "Hello World" style program with Nextjs.~~ 11/21/2022 10:06 AM
-1. Create the Post List Component with Static Data.
-1. Create the Input Component with Static Data.
+1. ~~Create the Post List Component with Static Data.~~ 11/21/2022 10:42 AM
+1. ~~Create the Input Component with Static Data.~~ 11/21/2022 10:51 AM
 1. Add Recoiljs and wire up the Input Component and Post List Component.
 1. Flesh out the Designs and Polish components up to this point.
 1. Add Comment Componentry and Polish.
