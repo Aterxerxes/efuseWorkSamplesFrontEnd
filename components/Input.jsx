@@ -1,7 +1,15 @@
 import { useState } from 'react'
+import { useSetRecoilState } from 'recoil'
+
+import { post } from '../recoil/selectors/posts'
 
 export default (params) => {
   const [text, setText] = useState('')
+  const setPost = useSetRecoilState(post)
+
+  const handleSubmit = () => {
+    setPost(text)
+  }
 
   return (
     <div className="input-container">
@@ -11,7 +19,7 @@ export default (params) => {
         onChange={(event) => {setText(event.target.value)}}
         placeholder={params.placeholder || "What's on your mind?"}
       />
-      <button>{params.isPost ? 'Post' : 'Comment'}</button>
+      <button onClick={handleSubmit}>{params.submitText}</button>
     </div>
   )
 }
