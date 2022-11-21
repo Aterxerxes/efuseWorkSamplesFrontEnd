@@ -4,9 +4,11 @@
 1. I have really disliked the paradigm of Redux, so I'm going to try a new(er) technology called Recoil.
 1. I'm going to be building from scratch (no create-react-app or create-next-app), so that I really let some of the understanding seep into my proverbial bones.
 1. I won't be hosting this elsewhere. All of the steps to get it running should be in the Readme when at the end.
+1. I began at approximately 9:30 AM (Mountain) on 11/21/2022, any gaps will be noted.
+1. A "Running Commentary" can be found [here](RunningCommentary.md)
 
 ### Proposed Steps
-1. Scaffold a "Hello World" style program with Nextjs.
+1. ~~Scaffold a "Hello World" style program with Nextjs.~~ 11/21/2022 10:06 AM
 1. Create the Post List Component with Static Data.
 1. Create the Input Component with Static Data.
 1. Add Recoiljs and wire up the Input Component and Post List Component.

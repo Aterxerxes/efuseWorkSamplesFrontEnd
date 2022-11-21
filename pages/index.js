@@ -1,5 +1,7 @@
-const HomePage = () => {
-  return <div>Hello Efuse!</div>
-}
+import PostList from "../components/PostList"
 
-export default HomePage
+export default () => ( 
+  <main>
+    <PostList />
+  </main>
+)
