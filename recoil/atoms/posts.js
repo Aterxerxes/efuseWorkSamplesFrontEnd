@@ -6,6 +6,10 @@ const comment = () => ({
   id: uuid(),
   text: 'This post is way too generic.'
 })
+const comment2 = () => ({
+  id: uuid(),
+  text: "I think it's just fine!"
+})
 
 const posts = [
   {
@@ -20,7 +24,7 @@ const posts = [
   },
   {
     id: uuid(),
-    comments: [comment(), comment()],
+    comments: [comment(), comment2()],
     text: lorem,
   }
 ]

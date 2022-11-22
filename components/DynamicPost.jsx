@@ -8,18 +8,18 @@ import PostHeader from './PostHeader'
 import MetaData from './MetaData'
 
 export default (params) => {
-  const { imageSize, text, comments, type, metaData } = params
+  const { id, imageSize, text, comments, type, timestamp, metaData } = params
   return (
   <div className={styles.postBody}>
     <PostHeader
       size={imageSize}
       username={'marty'}
-      timestamp={Date.now()}
+      timestamp={timestamp || Date.now() - 5000}
     />
     <p>{text}</p>
     <MetaData {...metaData} />
     {
-      type !== 'comment' && <AddComment />
+      type !== 'comment' && <AddComment id={id}/>
     }
     {
       comments && comments.length > 0 && <Separator />

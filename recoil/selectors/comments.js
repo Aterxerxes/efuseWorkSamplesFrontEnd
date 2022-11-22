@@ -3,8 +3,8 @@ import { v4 as uuid } from 'uuid'
 
 import Posts from '../atoms/posts'
 
-export const post = selector({
-  key: 'post',
+export const comment = selector({
+  key: 'comment',
   get: ({get}) => {
     const postList = get(Posts)
 
@@ -14,21 +14,29 @@ export const post = selector({
   },
   set: ({get, set}, newValue) => {
     const postList = get(Posts)
-    if (newValue.id) {
-      // This is an update, do the update.
-      // NOTE: I was asked not to do updates, but would have done them here.
-    } else {
-      // This is a create, add a new one.
-      const newList = [
+    
+    const index = postList.findIndex(item => {
+      return item.id == newValue.postId
+    })
+
+    const post = postList[index]
+
+    const newPost = {
+      ...post,
+      comments: [
         {
           id: uuid(),
-          comments: [],
-          text: newValue,
+          text: newValue.text,
           timestamp: Date.now()
         },
-        ...postList
+        ...post.comments
       ]
-      set(Posts, newList)
     }
+
+    const newList = [
+      ...postList
+    ]
+    newList.splice(index, 1, newPost)
+    set(Posts, newList)
   }
 })

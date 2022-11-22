@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 // Person is going to always be the same for this example. Would have imported otherwise.
 export default ({ size, username, timestamp }) => {
-  const timeAgo = (Date.now() + 5000) - timestamp
+  const timeAgo = Date.now() - timestamp
 
   let timeDisplay = null
   const seconds = timeAgo/1000
