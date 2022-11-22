@@ -28,7 +28,7 @@ export default ({id}) => {
   if (viewType === 'add') {
     return (
       <div onClick={handleViewChange} className={styles.addCommentContainer}>
-        <FontAwesomeIcon icon={faMessage} />
+        <FontAwesomeIcon icon={faMessage} size={3} />
         <input
           type="text"
           placeholder="Add comment"
