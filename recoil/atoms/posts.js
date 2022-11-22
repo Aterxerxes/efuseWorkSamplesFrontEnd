@@ -4,11 +4,13 @@ const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 const comment = () => ({
   id: uuid(),
-  text: 'This post is way too generic.'
+  text: 'This post is way too generic.',
+  metadata: {}
 })
 const comment2 = () => ({
   id: uuid(),
-  text: "I think it's just fine!"
+  text: "I think it's just fine!",
+  metadata: {}
 })
 
 const posts = [
@@ -16,20 +18,24 @@ const posts = [
     id: uuid(),
     comments: [],
     text: lorem,
+    metadata: {}
   },
   {
     id: uuid(),
     comments: [comment()],
     text: lorem,
+    metadata: {}
   },
   {
     id: uuid(),
     comments: [comment(), comment2()],
     text: lorem,
+    metadata: {}
   }
 ]
 
 export default atom({
   key: 'posts',
+  dangerouslyAllowMutability: true,
   default: posts // TODO: Use Real Data Later.
 })

@@ -5,7 +5,7 @@ export default (post) => {
   return (
     <div className={styles.postContainer}>
       <p className={styles.ellipses}>...</p>
-      <DynamicPost {...post} metaData={{ viewCount: 1369 }} />
+      <DynamicPost {...post} postId={post.id} />
     </div>
   )
 }

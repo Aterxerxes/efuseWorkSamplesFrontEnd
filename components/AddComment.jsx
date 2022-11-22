@@ -16,7 +16,6 @@ export default ({id}) => {
   }
 
   const handleAddComment = () => {
-    console.log('adding comment (not really)')
     setComment({ postId: id, text })
   }
 

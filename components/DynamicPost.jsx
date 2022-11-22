@@ -8,7 +8,16 @@ import PostHeader from './PostHeader'
 import MetaData from './MetaData'
 
 export default (params) => {
-  const { id, imageSize, text, comments, type, timestamp, metaData } = params
+  const { id, imageSize, text, comments, type, timestamp, metadata } = params
+  // TODO: Only allow one 'like" per user.
+  const args =  {
+    userId: 'abc123',
+    commentId: params.commentId,
+    postId: params.postId,
+    commentText: params.commentText,
+    commentCount: comments?.length ? comments.length : 0
+  }
+
   return (
   <div className={styles.postBody}>
     <PostHeader
@@ -17,7 +26,7 @@ export default (params) => {
       timestamp={timestamp || Date.now() - 5000}
     />
     <p>{text}</p>
-    <MetaData {...metaData} />
+    <MetaData {...metadata} {...args} />
     {
       type !== 'comment' && <AddComment id={id}/>
     }
@@ -25,7 +34,9 @@ export default (params) => {
       comments && comments.length > 0 && <Separator />
     }
     {
-      comments && comments.map(comment => <Comment key={comment.id} {...comment} />)
+      comments && comments.map(comment => {
+        return <Comment key={comment.id} {...comment} postId={params.postId} commentId={comment.id} />
+      })
     }
   </div>
 )}

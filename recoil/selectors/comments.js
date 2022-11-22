@@ -27,7 +27,10 @@ export const comment = selector({
         {
           id: uuid(),
           text: newValue.text,
-          timestamp: Date.now()
+          timestamp: Date.now(),
+          metadata: {
+            hypeCount: 0
+          }
         },
         ...post.comments
       ]

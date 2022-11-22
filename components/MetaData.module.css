@@ -5,8 +5,12 @@
   margin-left: 5px;
 }
 
-.dataItem {
+.dataItem, .dataItemClickable {
   margin-right: 10px;
+}
+
+.dataItemClickable {
+  cursor: pointer;
 }
 
 .dataIcon {
