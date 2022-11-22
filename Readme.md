@@ -5,3 +5,10 @@ This work sample is intended for Efuse, to show that I indeed know words, such a
 
 ## Disclaimer
 This work should not be considered "finished", or  "complete" or "production ready".
+
+## Install & Run (Node 18.x required)
+```bash
+npm i
+npm run dev
+```
+This should show up on `localhost:3000`
