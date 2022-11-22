@@ -1,0 +1,19 @@
+.metaDataContainer {
+  display: flex;
+  font-weight: 400;
+  color: #12151D;
+  margin-left: 5px;
+}
+
+.dataItem {
+  margin-right: 10px;
+}
+
+.dataIcon {
+  margin-right: 3px;
+}
+
+.dataNumber {
+  font-weight: 700;
+  margin-right: 5px;
+}

@@ -1,5 +1,6 @@
-import PostList from "../components/PostList"
 import { RecoilRoot } from 'recoil'
+
+import PostList from "../components/PostList"
 
 export default () => ( 
   <main>

@@ -20,3 +20,9 @@ I wanna see if I can fix this problem in the few minutes I have.
 Aha! Success! Objects are not extensible when receiving them from Atoms in a Selector.
 Makes sense.
 Pushing up this step.
+Starting on making things look a bit nicer.
+Got modular styles added, starting to look at the figma designs a bit cloesr.
+OK, now I really need to stop for a bit.
+Stop Time 11/21/2022 2:03 PM
+Start Time 11/21/2022 3:52 PM
+As I was asked to finish today, I'll be foregoing more in-depth commentary to go faster.

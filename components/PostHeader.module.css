@@ -1,0 +1,21 @@
+.profileImageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerImage {
+  border-radius: 50%;
+}
+
+.headerTextContainer {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  color: lightgray
+}
+
+.headerText {
+  font-weight: 700;
+  color: #12151D;
+}

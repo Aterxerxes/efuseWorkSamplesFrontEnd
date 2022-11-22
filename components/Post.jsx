@@ -1,11 +1,11 @@
-import Comment from "./Comment"
+import styles from './Post.module.css'
+import DynamicPost from './DynamicPost'
 
-export default (post) => (
-  <aside>
-    {post.id}
-    {post.text}
-    {
-      post.comments.map(comment => <Comment key={comment.id} {...comment} />)
-    }
-  </aside>
-)
+export default (post) => {
+  return (
+    <div className={styles.postContainer}>
+      <p className={styles.ellipses}>...</p>
+      <DynamicPost {...post} metaData={{ viewCount: 1369 }} />
+    </div>
+  )
+}

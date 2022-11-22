@@ -1,0 +1,11 @@
+.postListContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.postListBody {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  align-items: stretch;
+}
