@@ -12,10 +12,10 @@
 1. ~~Create the Post List Component with Static Data.~~ 11/21/2022 10:42 AM
 1. ~~Create the Input Component with Static Data.~~ 11/21/2022 10:51 AM
 1. ~~Add Recoiljs and wire up the Input Component and Post List Component.~~ 11/21/2022 12:49 PM
-1. Flesh out the Designs and Polish components up to this point.
-1. Add Comment Componentry and Polish.
-1. Add Like Componentry and Polish.
-1. Tests as needed.
-1. Overall Polish and Iterating on any items needed.
-1. Add Readme.
-1. Done.
+1. ~~Flesh out the Designs and Polish components up to this point.~~ Some time between 3:52 PM and 5:00 PM
+1. ~~Add Comment Componentry and Polish.~~ Some time between 5:00 PM and 7:30 PM
+1. ~~Add Like Componentry and Polish.~~ Some time between 5:00 PM and 7:30 PM
+1. ~~Tests as needed.~~ Not doing as it's very late.
+1. ~~Overall Polish and Iterating on any items needed.~~ Done with most, if not all items by 11/21/2022 9:53 PM
+1. ~~Add Readme.~~ 11/21/2022 9:55 PM
+1. ~~Done.~~ 11/21/2022 9:59 PM
